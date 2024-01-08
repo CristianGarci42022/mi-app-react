@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import './Components/styles/Login.css';
@@ -7,15 +7,20 @@ import './Components/styles/profile.css';
 import Home from './Components/Pages/Home';
 import LoginButtons from './Components/Buttons/LoginButtons';
 import { useAuth0 } from '@auth0/auth0-react';
+import Nav from './Components/Menu/Nav';
 
-function App() {
-  const { isAuthenticated, isLoading, user, logout } = useAuth0();
+const App = () => {
+  const { isAuthenticated, isLoading } = useAuth0();
+ 
+const [backgroundColor, setBackgroundColor] = useState("rgba(255, 255, 255, 255)");
+
 
   if (isLoading) return <h1>Cargando...</h1>;
 
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={{ backgroundColor }}>
+      <Nav setBackgroundColor={setBackgroundColor} />
         <Routes>
           <Route
             path="/"
@@ -31,7 +36,7 @@ function App() {
             path="/home"
             element={
               isAuthenticated ? (
-                <Home user={user} logout={logout} />
+                <Home />
               ) : (
                 <Navigate to="/login" />
               )
@@ -54,6 +59,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;
