@@ -9,8 +9,8 @@ header {
   right: 0;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
-  border-bottom: 3px solid rgba(252, 211, 77, 1);
-  background-color: rgba(81, 76, 171, 1);
+  border-bottom: 3px solid rgb(3, 127, 16);
+  background-color: rgb(7, 102, 136);
 }
 
 header a {
