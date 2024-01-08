@@ -1,3 +1,7 @@
+/* Perfile.css */
+
+/* ... (otros estilos) */
+
 header {
   position: fixed;
   top: 0;
@@ -7,27 +11,44 @@ header {
   padding-bottom: 1.3rem;
   border-bottom: 3px solid rgba(252, 211, 77, 1);
   background-color: rgba(81, 76, 171, 1);
-  }
-  
-  header a {
-    color: rgba(255, 255, 255, 1);
+}
+
+header a {
+  color: rgba(255, 255, 255, 1);
   cursor: pointer;
+}
+
+header a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Agregar consulta de medios para tamaños de pantalla pequeños (ej. móviles) */
+@media only screen and (max-width: 600px) {
+  header {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
   }
-  
-  header a:hover {
-    color: rgba(255, 255, 255, 1);
-  }
-  
+
   .nav {
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  header picture > img {
-    border: 2px solid rgba(255, 255, 255, 1);
+
+  header small {
+    margin-top: 0.8rem;
+  }
+}
+
+header picture > img {
+  border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 9999px;
   width: 2.7rem;
   height: 2.7rem;
@@ -35,67 +56,63 @@ header {
   margin-left: 0.5rem;
   margin-bottom: -0.5rem;
   margin-top: -0.5rem;
-  }
-  
+}
 
-  .username {
-    color: rgba(255, 255, 255, 1);
-    font-size: 0.875rem; /* Tamaño del nombre más pequeño */
-    margin-right: 0.5rem; /* Espacio entre el nombre y la imagen */
-  }
-  
-  header small {
-    color: rgba(252, 211, 77, 1);
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    cursor: pointer;
-  }
-  
-  header small:hover {
-    color: rgba(252, 211, 77, 0.8);
-  }
-  
-  .user {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-  }
-  
-  
-  .user > div {
-    text-align: right;
-    display: flex; /* Agregado para alinear contenido de manera horizontal */
-    align-items: center; /* Agregado para centrar verticalmente el contenido */
-  }
+.username {
+  color: rgba(255, 255, 255, 1);
+  line-height: 1;
+  user-select: none;
+}
 
-  
-  .logo {
-    margin-bottom: 1rem;
-    display: flex;
-    font-size: 30px;
-    font-family: cursive;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .navigation {
-    line-height: 2rem;
-    display: flex;
-  }
-  
-  .navigation > div {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    display: flex;
-  }
-  
-  .navigation > div > a {
-    font-weight: 300;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-  }
-  
-  .navigation > div > a:hover {
-    color: rgba(255, 255, 255, 0.8);
-  }
-  
+header small {
+  color: rgba(252, 211, 77, 1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+
+header small:hover {
+  color: rgba(252, 211, 77, 0.8);
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.user > div {
+  text-align: right;
+}
+
+.logo {
+  margin-bottom: 1rem;
+  display: flex;
+  font-size: 30px;
+  font-family: cursive;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navigation {
+  line-height: 2rem;
+  display: flex;
+}
+
+.navigation > div {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+}
+
+.navigation > div > a {
+  font-weight: 300;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.navigation > div > a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ... (otros estilos) */
