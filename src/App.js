@@ -1,8 +1,10 @@
 import './App.css';
+import './Login.css'
 import LoginButtons from './Components/LoginButtons';
 import LogoutButton from './Components/LogoutButton';
 import Profile from './Components/Profile';
 import { useAuth0 } from '@auth0/auth0-react';
+
 function App() {
 
   const {isAuthenticated,isLoadig,user} = useAuth0()
@@ -13,7 +15,7 @@ function App() {
         <>
           <div>
             <h1>Bienvenido {user.name} </h1>
-           
+
           </div>
           <Profile />
           <LogoutButton />
@@ -21,7 +23,7 @@ function App() {
       ) : (
         <>
           <div>
-            <h1>Primero debes Iniciar sesión</h1>
+            <h1 className="login-container-title">Social Network</h1>
             <LoginButtons />
           </div>
         </>
