@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 export const Logo = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="logo">
       <a onClick={() => navigate("/home")}>Social Network</a>
     </div>
   );

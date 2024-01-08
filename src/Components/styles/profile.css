@@ -37,10 +37,11 @@ header {
   margin-top: -0.5rem;
   }
   
+
   .username {
     color: rgba(255, 255, 255, 1);
-  line-height: 1;
-  user-select: none;
+    font-size: 0.875rem; /* Tamaño del nombre más pequeño */
+    margin-right: 0.5rem; /* Espacio entre el nombre y la imagen */
   }
   
   header small {
@@ -60,9 +61,13 @@ header {
     margin-bottom: 1rem;
   }
   
+  
   .user > div {
     text-align: right;
+    display: flex; /* Agregado para alinear contenido de manera horizontal */
+    align-items: center; /* Agregado para centrar verticalmente el contenido */
   }
+
   
   .logo {
     margin-bottom: 1rem;
