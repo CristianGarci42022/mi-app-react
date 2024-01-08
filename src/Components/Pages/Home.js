@@ -1,11 +1,13 @@
 // Home.js
 import React from 'react';
+import Nav from '../Menu/Nav';
 
-const Home = ({ user, logout }) => {
+
+export const Home = ({ logout }) => {
   return (
     <div>
-      <h1>Bienvenido {user.name}</h1>
-      <button onClick={() => logout()}>Cerrar Sesión</button>
+      <Nav logout={logout}/>
+      
     </div>
   );
 };
