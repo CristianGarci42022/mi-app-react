@@ -1,11 +1,13 @@
-import { memo, useEffect, useState } from 'react'
+// import { memo, useEffect, useState } from 'react'
+import { memo, useState } from 'react'
 // import { getUser} from '../../../services/api'
 import '../../../styles/modal.css'
 import { Comment } from '../atoms/Comment'
 import { Profile } from '../atoms/Profile'
 
 export const ModalUser = memo(({ show, handleClose, userData }) => {
-  const [user, setUser] = useState([])
+  // const [user, setUser] = useState([])
+  const [user] = useState([])
 
   // useEffect(() => {
   //   getUser(userData).then(res => setUser(res))
