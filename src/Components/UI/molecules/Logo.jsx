@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// Logo.js
+
 import React from 'react';
 import { useNavigate } from "react-router-dom";
 

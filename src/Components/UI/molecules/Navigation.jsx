@@ -1,10 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-// Navigation.js
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
 
 export const Navigation = () => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   return (
     <div className="navigation">
       <div>
@@ -12,7 +9,5 @@ export const Navigation = () => {
         <a onClick={() => navigate("/users")}>Users</a>
       </div>
     </div>
-  );
-};
-
-export default Navigation;
+  )
+}
