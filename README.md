@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Social Netwok
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Una aplicación de social netwok basada en React en el cual puedes publicar y comentar y ver los usuarios, y  autenticarte mediante un correo de Google o crear una cuenta 
 
-## Available Scripts
+## Guiones disponibles
 
-In the project directory, you can run:
+Aquí puedes ver el proyecto realizado: https://social-network-v.netlify.app/
+### Características
 
-### `npm start`
+1-Inicio de sesión utilizando un autenticador externo:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Utiliza de herramienta de autenticación externa en la aplicacion de React
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2-Ver publicaciones en el home:
 
-### `npm test`
+Realiza una solicitud a la API de la social netwok para obtener la lista de posts.
+montrando la información de cada post en la interfaz de usuario.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3-Mostrar detalles del post:
 
-### `npm run build`
+Muestra la foto y el nombre del usuario que hizo la publicacion.
+Muestra la imagen y el texto de las publicaciones
+Muestra la cantidad de likes y comentarios realizados por los usuarios
+Implementa un botón o enlace para abrir un modal con todos los comentarios.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4-Mostrar todos los comentarios:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Mostrar los comentarios relacionados que ha dejado los usuarios en cada publicacion
+Realiza una solicitud a la API para obtener todos los comentarios asociados a las publicaciones
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5-Mostrar información del usuario autenticado:
 
-### `npm run eject`
+Mostrar informacion de usuarios con su respectiva id de autenticacion en usuarios
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Instalación
+## Requisitos
+Antes de continuar con la instalación, asegúrese de tener los siguientes requisitos previos instalados en su máquina:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Node.js** (version 14 or higher)
+- **npm** (Node Package Manager)
+Clona el repositorio en tu máquina local:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clona el repositorio en tu máquina local:
 
-## Learn More
+```bash
+  git clone https://github.com/berkysr/nombre-de-proyecto.git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navegue al directorio del proyecto:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+ cd nombre-de-proyecto
+```
 
-### Code Splitting
+3.Instalar dependencias del proyecto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  npm install
+```
 
-### Analyzing the Bundle Size
+## Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Desarrollo
 
-### Making a Progressive Web App
+Para ejecutar la aplicación en modo de desarrollo:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+  npm start
+```
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
