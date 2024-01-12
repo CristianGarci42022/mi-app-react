@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Modal } from "../organism/Modal"
-// import { FaHeart, FaComment } from 'react-icons/fa'; 
+import { FaHeart, FaComment } from 'react-icons/fa'; 
 
 
 
@@ -18,14 +18,14 @@ export const Interaction = ({ src, quantity, commentsData }) => {
       {src === "like" ? (
         <button>
         
-        {/* <FaHeart />  */}
+        <FaHeart /> 
         <small>{quantity}</small>
       </button>
       ) : (
         <>
           <button onClick={handleShow}>
          
-            {/* <FaComment />  */}
+            <FaComment /> 
             <small>{quantity}</small>
           </button>
           <Modal show={show} handleClose={handleClose} commentsData={commentsData} />

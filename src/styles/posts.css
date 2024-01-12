@@ -123,3 +123,22 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
 }
+/* Consulta de medios para pantallas más grandes (web) */
+@media only screen and (min-width: 768px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .post-container {
+    background-color: #70879b;
+    padding: 1rem;
+    margin-bottom: 6px;
+    width: 100%;
+  }
+
+  .post_content {
+    object-fit: contain;
+    height: 12rem;
+    object-position: center;
+  }
+}

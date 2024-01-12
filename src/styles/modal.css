@@ -14,7 +14,7 @@
 }
 
 .modal_content {
-  background-color: #e3e3e3;
+  background-color: #ececec;
   border-radius: 8px;
   width: 50%;
   height: 100%;
@@ -23,7 +23,7 @@
 
 .close {
   border-radius: 50%;
-  background-color: #dadada;
+  background-color: #e3e3e3;
   padding: 5px 15px;
   cursor: pointer;
   position: absolute;
@@ -32,7 +32,7 @@
 }
 
 .close:hover {
-  background-color: #c7c7c7;
+  background-color: #d30808;
 }
 
 .modal_info {
@@ -41,8 +41,9 @@
   display: block !important;
 }
 
+
 .modal_profile > img {
-  border: 2px solid rgba(255, 255, 255, 1);
+  border: 2px solid rgb(7, 177, 19);
   border-radius: 9999px;
   width: 3rem;
   height: 3rem;
@@ -53,11 +54,13 @@
 
 .card {
   border-radius: 8px;
-  border: 1px solid #000;
+  border: 1px solid #093ddf;
   margin-bottom: 10px;
   padding-left: 20px;
 }
-
+span{
+  color: #000000;
+}
 .modal_name {
   color: rgba(0, 0, 0, 0.8);
   user-select: none;
@@ -67,7 +70,9 @@
 .comment {
   padding: 0rem 4.3rem 2rem;
 }
-
+h3.comments{
+  color: #000000;
+}
 .comments {
   margin-bottom: 10px;
 }
